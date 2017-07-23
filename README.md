@@ -18,32 +18,41 @@ psql -d news -f newsdata.sql
 
 ### How to use
 
-1. unzip the catalog.zip under /vagrant directory
+1. unzip the newsdata.zip under /vagrant directory
 
 
 
-2. access the catalog directory
+2. access the newsdata directory
 
 ```
-vagrant@vagrant:/vagrant$ cd catalog/
+vagrant@vagrant:/vagrant$ cd newsdata/
 ```
 
-3. run catalog.py
+3. run newsdata.py
 
 use command
 ```
-vagrant@vagrant:/vagrant/catalog$ python catalog.py
+vagrant@vagrant:/vagrant/catalog$ python newsdata.py
 ```
 
-or if you chmod 775 to catalog.py
+or if you chmod 775 to newsdata.py
 
 ```
-vagrant@vagrant:/vagrant/catalog$ ./catalog.py
+vagrant@vagrant:/vagrant/newsdata$ ./newsdata.py
 ```
 
 4. open outputfile out.txt  
 
 Then you can find the answer to question
+
+
+### Created Views
+
++ popular_article : title, count number of the reviews, author
+
++ error_date: date, sum of error num in this date 
+
++ total_date: date, sum of log num in this date
 
 
 ### More
